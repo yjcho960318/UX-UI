@@ -9,6 +9,30 @@
 <body>
     <h1 class="logo"></h1><a href="https://www.naver.com/"></a><img src="./images/logo.png" srcset="./images/logo.svg"
      alt="Naver">
-    
+    <form action="http://formspree.io/seulbinim@gmail.com" class="login-form" method="POST">
+    <fieldset>
+        <legend>로그인 폼</legend>
+        <div class="user-email">
+            <label for="userEmail">아이디</label>
+            <input type="email" id="userEmail" placeholder="아이디(이메일)" required="required" >
+        </div>
+        <div class="user-password">
+            <label for="userPassword">비밀번호</label>
+            <input type="password" id="userPassword" placeholder="비밀번호" required="required" >
+        </div>
+        <div class="ip-state-wrapper">
+            <div class="login-state"> <input type="checkbox" id="loginState">
+            <label for="loginState"><span class="icon-check"></span>
+            로그인 상태유지
+        </label>
+    </div>
+    <div class="loginIP">
+        <input type="checkbox" id="loginIP">
+        <label for="loginIP">IP 보안</label>
+    </div>
+     </div>
+    </fieldset>
+    </form>
+
 </body>
 </html>
