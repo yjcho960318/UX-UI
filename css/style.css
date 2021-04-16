@@ -32,6 +32,9 @@ body{
     height: auto;
 }
 /* 로그인 폼 */
+.login-form :focus{
+    outline: 0;
+}
 .login-form fieldset{
     border:0;
     margin:0;
@@ -51,14 +54,40 @@ body{
 .btn-login{
     width: 100%;
 }
-.ip-state-wrapper{
-    order: 1;
-    display: flex;
-    justify-content: space-between;
-    background-color: yellow;
+.user-email,
+.user-password{
+    background: #FFFFFF;
+border: 1px solid #DADADA;
+box-sizing: border-box;
+height: 48px;
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+.user-email:focus-within,
+.user-password:focus-within{
+    border-color: #03CF5D;
 }
 [name="userEmail"],
 [name="userPassword"]{
     box-sizing: border-box;
     width: 100%;
+    border: 0;
+    padding: 5px 10px 5px 20px;
+    
+    
+}
+.ip-state-wrapper{
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btn-login{
+    margin-top: 10px;
+    background-color: #03CF5D;
+  color: #FFFFFF;
+font-weight: 700;
+border: 0;
+padding: 16px 0
 }
